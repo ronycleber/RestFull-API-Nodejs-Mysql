@@ -40,7 +40,7 @@ class Produto {
             return {status:false,err:error};
         }
     }
-
+    
     async update(id,nome,cor,tamanho,valor){
         let produto = await this.findById(id);
         

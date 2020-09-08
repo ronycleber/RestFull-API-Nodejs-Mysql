@@ -72,7 +72,7 @@ class ProdutoController {
         }
         res.status(200);
         res.send({status:true,msg:`Produto Id ${id} atualizado!`});
-    }
+    }    
 }
 
 function listLinks(id){
