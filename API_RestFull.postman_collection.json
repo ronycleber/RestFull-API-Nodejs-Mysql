@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "22157ff1-1aec-42b0-bc7e-1a7ee475330a",
+		"name": "API RestFull",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "/clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/clientes",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"clientes"
+							]
+						},
+						"description": "Listas os Clientes cadastrados"
+					},
+					"response": []
+				},
+				{
+					"name": "/clientes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"nome\": \"Alessandra dos Santos\",\n    \"cpf\": \"777.222.333-44\",\n    \"sexo\": \"M\",\n    \"email\": \"alessandra.dev@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_BASE}}/clientes",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"clientes"
+							]
+						},
+						"description": "Listas os Clientes cadastrados"
+					},
+					"response": []
+				},
+				{
+					"name": "/clientes/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/clientes/18",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"clientes",
+								"18"
+							]
+						},
+						"description": "Detalhes do Cliente por ID"
+					},
+					"response": []
+				},
+				{
+					"name": "/clientes/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Alessandra Marasca\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_BASE}}/clientes/18",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"clientes",
+								"18"
+							]
+						},
+						"description": "Detalhes do Cliente por ID"
+					},
+					"response": []
+				},
+				{
+					"name": "/clientes/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/clientes/1",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"clientes",
+								"1"
+							]
+						},
+						"description": "Detalhes do Cliente por ID"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Produtos",
+			"item": [
+				{
+					"name": "/produtos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/produtos",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"produtos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/produtos/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/produtos/4",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"produtos",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/produtos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Leite\",\n    \"cor\": \"branca\",\n    \"tamanho\": 4.25,\n    \"valor\": 3.35\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_BASE}}/pedidos",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/produtos/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/produtos/1",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"produtos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/produtos/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/produtos/1",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"produtos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Pedidos",
+			"item": [
+				{
+					"name": "/pedidos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/pedidos",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/pedidos/40",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"pedidos",
+								"40"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": \"2020-09-07\",\n    \"observacao\": \"Teste realizados para implementação da API, desafio backend\",\n    \"forma_pagto\": 1,\n    \"cliente_id\": 18,\n    \"produtos\":[\n        { \n            \"id\": 3,\n            \"qtde\": 10,\n            \"valor_unid\": 10\n        },\n        { \n            \"id\": 4,\n            \"qtde\": 5,\n            \"valor_unid\": 10\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_BASE}}/pedidos",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/:id/report",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": \"2020-09-07\",\n    \"observacao\": \"Teste realizados para implementação da API, desafio backend\",\n    \"forma_pagto\": 1,\n    \"cliente_id\": 18,\n    \"produtos\":[\n        { \n            \"id\": 3,\n            \"qtde\": 10,\n            \"valor_unid\": 10\n        },\n        { \n            \"id\": 4,\n            \"qtde\": 5,\n            \"valor_unid\": 10\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_BASE}}/pedidos/40/report",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"pedidos",
+								"40",
+								"report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 40,\n       \n        \"observacao\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\",\n        \"forma_pagto\": 2,\n        \"cliente_id\": 18,\n        \"produtos\": [\n            {\n                \"id\": 11,\n                \"pedido_id\": 40,\n                \"produto_id\": 3,\n                \"qtde\": 10,\n                \"valor_unid\": 10.43,\n                \"valor_total\": 104.3\n            },\n            {\n                \"id\": 12,\n                \"pedido_id\": 40,\n                \"produto_id\": 4,\n                \"qtde\": 5,\n                \"valor_unid\": 10.15,\n                \"valor_total\": 50.75\n            }\n        ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_BASE}}/pedidos/40",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"pedidos",
+								"40"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/pedidos/1",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"pedidos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
