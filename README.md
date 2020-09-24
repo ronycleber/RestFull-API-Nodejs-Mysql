@@ -4,6 +4,7 @@
 * Nodejs
 * MySQL
 * Git/GitHub
+* Conta de e-mail para os envios
 
 ## Para executar o Projeto
 Clonar o repositório com `git clone`
